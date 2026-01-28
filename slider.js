@@ -26,17 +26,22 @@ setInterval(() => {
 document.getElementById('quoteForm').addEventListener('submit', e => {
   e.preventDefault();
 
-  const msg = `
-Hola, quiero una cotización:
-Nombre: ${name.value}
-Email: ${email.value}
-Proyecto: ${project.value}
-Detalles: ${details.value}
-Presupuesto: ${budget.value}
-`;
+  // Declarar las variables correctamente
+  const nombre = document.getElementById('name').value;
+  const correo = document.getElementById('email').value;
+  const proyecto = document.getElementById('project').value;
+  const detalles = document.getElementById('details').value;
+  const presupuesto = document.getElementById('budget').value;
+
+  const msg = `Hola, quiero una cotización:
+Nombre: ${nombre}
+Email: ${correo}
+Proyecto: ${proyecto}
+Detalles: ${detalles}
+Presupuesto: ${presupuesto}`;
 
   window.open(
-    `https://wa.me/521XXXXXXXXXX?text=${encodeURIComponent(msg)}`,
+    `https://wa.me/529511271872?text=${encodeURIComponent(msg)}`, // Cambié el placeholder por tu número real que está en el HTML
     '_blank'
   );
 });
