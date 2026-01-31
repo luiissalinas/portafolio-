@@ -41,7 +41,7 @@ Detalles: ${detalles}
 Presupuesto: ${presupuesto}`;
 
   window.open(
-    `https://wa.me/529511271872?text=${encodeURIComponent(msg)}`, // Cambié el placeholder por tu número real que está en el HTML
+    `https://wa.me/529518747782?text=${encodeURIComponent(msg)}`, // Cambié el placeholder por tu número real que está en el HTML
     '_blank'
   );
 });
